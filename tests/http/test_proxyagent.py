@@ -23,7 +23,6 @@ from twisted.web.http import HTTPChannel
 
 from synapse.http.proxyagent import ProxyAgent
 
-from tests import unittest
 from tests.http import TestServerTLSConnectionFactory, get_test_https_policy
 from tests.server import FakeTransport, ThreadedMemoryReactorClock
 from tests.unittest import TestCase
@@ -33,7 +32,6 @@ logger = logging.getLogger(__name__)
 HTTPFactory = Factory.forProtocol(HTTPChannel)
 
 
-@unittest.DEBUG
 class MatrixFederationAgentTests(TestCase):
     def setUp(self):
         self.reactor = ThreadedMemoryReactorClock()
