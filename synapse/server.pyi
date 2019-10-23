@@ -45,7 +45,7 @@ class HomeServer(object):
         or support any HTTP_PROXY settings"""
         pass
 
-    def get_proxied_http_client(self) synapse.http.client.SimpleHttpClient:
+    def get_proxied_http_client(self) -> synapse.http.client.SimpleHttpClient:
         """Fetch an HTTP client implementation which doesn't do any blacklisting
         but does support HTTP_PROXY settings"""
         pass
